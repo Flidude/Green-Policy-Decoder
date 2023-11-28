@@ -61,6 +61,33 @@ header h1 {
     padding: 80px;
 }
 
+.certifications-container {
+    display: flex;
+    justify-content: space-evenly; 
+}
+  
+  .certification {
+    text-align: center;
+    margin: 20px;
+}
+  
+  .certification img {
+    width: 50px; 
+}
+  
+  .certification h3 {
+    margin-top: 10px;
+    color: #333333; 
+}
+
+.climate-policy-link {
+    background-color: #e8e8e7;
+    text-decoration: none;
+    color: #333333;
+    background-size: cover;
+    text-align: center;
+}
+
 hr {
     border: 1px solid #333;
     margin: 20px 0; 
@@ -69,10 +96,10 @@ hr {
 body {
     background-color: #e8e8e7;
     text-decoration: none;
-    color: #244C46;
-
+    color: #333333;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .common-language {
