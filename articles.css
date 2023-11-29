@@ -62,6 +62,7 @@ header h1 {
 }
 
 .certifications-container {
+    text-align: center;
     display: flex;
     justify-content: space-evenly; 
 }
