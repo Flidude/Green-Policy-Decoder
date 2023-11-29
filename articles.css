@@ -90,6 +90,7 @@ header h1 {
 }
 
 .climate-policy-link img {
+    max-width: 600px;
     border: 2px solid #333333;
 }
 
