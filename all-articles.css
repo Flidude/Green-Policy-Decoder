@@ -112,3 +112,29 @@ body {
 .article h2 a:hover {
     color: #9fc2be;
 }
+
+footer {
+    border: 2px solid #222222;
+    background-color: #333333; 
+    color: #ffffff;
+    padding: 20px; 
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0; 
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover{
+    text-decoration: underline; 
+} 
