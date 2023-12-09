@@ -61,12 +61,16 @@ header h1 {
     padding: 80px;
 }
 
+.certification-title {
+    text-align: center;
+}
+
 .certifications-container {
     text-align: center;
     display: flex;
     justify-content: space-evenly; 
 }
-  
+
   .certification {
     text-align: center;
     margin: 0px;
@@ -105,7 +109,7 @@ body {
     color: #333333;
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: Left;
 }
 
 .common-language {
