@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <body>
     <link rel="stylesheet" type="text/css" href="all-articles.css">
 
     <head>
         <meta charset="UTF-8">
         <title>All Articles</title>
+        <script src="https://kit.fontawesome.com/6ca6a4079b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY7LEVHQTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-TY7LEVHQTH');
+    </script>
     </head>
     <nav>
         <a href="index.html"><img src="Images/navlogo.jpg" alt="Green policy decoder"></a>
@@ -20,31 +32,52 @@
         <h1>All Articles</h1>
     </header>
 
+    <div class="search-container">
+    <input type="text" id="search" onkeyup="filterArticles()" placeholder="Search for sectors..">
+    </div>
     <ul class="article-list">
-        <li class="article">
-            <img src="Images/thumbnail2.jpg" alt="Article 1 Image">
+        <li class="article" data-sector="governmental">
+        <h2>Governmental</h2>
+        </li>
+        
+        <li class="article" data-sector="governmental">
+            <img src="Images/thumbnail2.jpg" alt="An Post logo">
             <div>
                 <h2><a href="an-post.html">An Post</a></h2>
-                <p>A summary of an posts climate activity and certifications.</p>
+                <p>A summary of An Post's climate activity and certifications.</p>
             </div>
         </li>
 
-        <li class="article">
-            <img src="Images/thumbnail4.jpeg" alt="Article 2 Image">
+        <li class="article" data-sector="governmental">
+            <img src="Images/thumbnail4.jpeg" alt="Bus Éireann logo">
             <div>
                 <h2><a href="bus-eireann.html">Bus Éireann</a></h2>
-                <p>Bus Éireann.</p>
+                <p>A summary of Bus Éireann's climate activity and certifications.</p>
             </div>
         </li>
 
-        <li class="article">
-            <img src="Images/thumbnail5.jpg" alt="Article 2 Image">
+        <li class="article" data-sector="governmental">
+            <img src="Images/thumbnail5.jpg" alt="Gas Networks Ireland logo">
             <div>
                 <h2><a href="gas-networks-ireland.html">Gas Networks Ireland</a></h2>
-                <p>Gas Networks Ireland</p>
+                <p> A summary of Gas Networks Ireland's climate activity and certifications.</p>
             </div>
         </li>
     </ul>
+
+    <ul class="article-list">
+        <li class="article" data-sector="technology">
+            <h2>Technology</h2>
+            </li>
+        <li class="article" data-sector="technology">
+            <img src="Images/thumbnail7.png" alt="Samsung logo">
+            <div>
+                <h2><a href="samsung.html">Samsung</a></h2>
+                <p>A summary of Samsung's climate activity and certifications.</p>
+            </div>
+        </li>
+    </ul>
+   
 
     <footer>
         <div class="footer-links">
@@ -54,5 +87,27 @@
         <p>Contact us: 20akeane@gcldrive.com or 20nnestor@gcldrive.com</p>
         <p class="copyright">&copy; 2023 BTYS</p>
     </footer>
-    
+
+    <script>
+        function filterArticles() {
+          var input, filter, uls, li, i, j, sector;
+          input = document.getElementById('search');
+          filter = input.value.toUpperCase();
+          uls = document.getElementsByClassName("article-list");
+        
+          for (j = 0; j < uls.length; j++) {
+            li = uls[j].getElementsByTagName('li');
+        
+            for (i = 0; i < li.length; i++) {
+              sector = li[i].dataset.sector;
+              if (sector.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+    </body>
 </html>

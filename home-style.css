@@ -44,6 +44,10 @@ nav li:not(:last-child)::after {
     color: #43938c;
 }
 
+.nav-item {
+    display: inline-block;
+}
+
 header {
     font-family: Arial, sans-serif;
     color: #e8e8e7;
@@ -60,6 +64,21 @@ header h1 {
     background-image: url('Images/header-background.png');
     background-size: cover;
     padding: 210px;
+}
+
+.intro {
+    background-color: #e8e8e7;
+    color: #43938c;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro h2 {
+    color: #333333;
+    font-size: 200%;
+    margin-bottom: 20px;
 }
 
 body {

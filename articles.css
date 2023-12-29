@@ -69,11 +69,13 @@ header h1 {
     text-align: center;
     display: flex;
     justify-content: space-evenly; 
+    
 }
 
   .certification {
     text-align: center;
     margin: 0px;
+
 }
   
   .certification img {
@@ -82,7 +84,12 @@ header h1 {
   
   .certification h3 {
     margin-top: 10px;
-    color: #333333; 
+    color: #333333;     
+}
+
+.certification a {
+    text-decoration: none;
+    color: #333333;
 }
 
 .climate-policy-link {
@@ -100,7 +107,7 @@ header h1 {
 
 hr {
     border: 1px solid #333;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 body {
@@ -123,6 +130,10 @@ body {
 .article {
     margin: 20px;
     text-align: left;;
+}
+
+.article a {
+    color: #333333
 }
 
 .article h3 {
