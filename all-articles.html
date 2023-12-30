@@ -17,6 +17,27 @@
     
       gtag('config', 'G-TY7LEVHQTH');
     </script>
+        <script>
+            function filterArticles() {
+              var input, filter, uls, li, i, j, sector;
+              input = document.getElementById('search');
+              filter = input.value.toUpperCase();
+              uls = document.getElementsByClassName("article-list");
+            
+              for (j = 0; j < uls.length; j++) {
+                li = uls[j].getElementsByTagName('li');
+            
+                for (i = 0; i < li.length; i++) {
+                  sector = li[i].dataset.sector;
+                  if (sector.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            </script>
     </head>
     <nav>
         <a href="index.html"><img src="Images/navlogo.jpg" alt="Green policy decoder"></a>
@@ -80,34 +101,10 @@
    
 
     <footer>
-        <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-        </div>
         <p>Contact us: 20akeane@gcldrive.com or 20nnestor@gcldrive.com</p>
-        <p class="copyright">&copy; 2023 BTYS</p>
+        <p class="copyright">&copy; 2023 Green Policy Decoder</p>
     </footer>
 
-    <script>
-        function filterArticles() {
-          var input, filter, uls, li, i, j, sector;
-          input = document.getElementById('search');
-          filter = input.value.toUpperCase();
-          uls = document.getElementsByClassName("article-list");
-        
-          for (j = 0; j < uls.length; j++) {
-            li = uls[j].getElementsByTagName('li');
-        
-            for (i = 0; i < li.length; i++) {
-              sector = li[i].dataset.sector;
-              if (sector.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-              } else {
-                li[i].style.display = "none";
-              }
-            }
-          }
-        }
-        </script>
+
     </body>
 </html>
