@@ -65,6 +65,12 @@ header h1 {
     text-align: center;
 }
 
+.certification {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
 .certifications-container {
     text-align: center;
     display: flex;
@@ -81,7 +87,15 @@ header h1 {
   .certification img {
     width: 50px; 
 }
-  
+
+.certification img[src="Images/breeam-certification.png"] {
+    width: 80px;
+}
+
+.certification img[src="Images/leed-certification.png"] {
+    width: 150px;
+}
+
   .certification h3 {
     margin-top: 10px;
     color: #333333;     
@@ -145,6 +159,17 @@ body {
 .article h2 {
     font-family: Arial, sans-serif;
     font-weight: bold;
+    color: #333333;
+}
+
+.references {
+    list-style-position: outside;
+    padding-left: 10px;
+    text-align: left;
+    margin: 20px;
+}
+
+.references a {
     color: #333333;
 }
 

@@ -182,7 +182,6 @@ footer p {
 }
 
 @media only screen and (max-width: 640px) {
-    /* Mobile-friendly styles */
 
     nav {
         flex-direction: column;

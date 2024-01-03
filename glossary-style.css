@@ -72,7 +72,30 @@ body {
 
 .iso-certification-glossary {
     margin: 20px;
-    margin-bottom: px;
+    margin-bottom: 20px;
+}
+
+.iso-certification-glossary h2 {
+    color: #87a5a2;
+}
+
+.cdp-glossary {
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.cdp-glossary a {
+    text-decoration: none;
+    color: #87a5a2;
+}
+
+.certification-glossary {
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.certification-glossary h2 {
+    color: #87a5a2;
 }
 
 footer {
