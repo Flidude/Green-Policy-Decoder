@@ -1,3 +1,4 @@
+@media only screen and (min-width:1000px) {
 nav {
     display: flex;
     justify-content: space-around;
@@ -188,3 +189,209 @@ footer p {
 .copyright {
     font-size: 14px;
 }
+
+}
+
+@media only screen and (max-width:1000px) {
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-around;
+        background-color: #e8e8e8e7;
+        color: #333333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    nav img {
+        width: 70%;
+        height: auto; 
+        margin-left: 14%;
+    }
+
+    nav a {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #43938c;
+        transition: color 0.2s;
+    }
+
+    nav a:hover {
+        color: #9fc2be; 
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 50px;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+        position: relative;
+    }
+
+    nav li:not(:last-child)::after {
+        content: "|";
+        position: absolute;
+        right: -10px; 
+        color: #43938c;
+    }
+
+    .nav-item {
+        display: inline-block;
+    }
+
+    header {
+        font-family: Arial, sans-serif;
+        color: #e8e8e7;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 300%;
+        text-align: center;
+    }
+
+    .header {
+        background-image: url('Images/header-background.png');
+        background-size: auto;
+        padding: 50px;
+    }
+    
+    .certification-title {
+        text-align: center;
+    }
+    
+    .certification {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center; 
+    }
+    
+    .certifications-container {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly; 
+        
+    }
+    
+      .certification {
+        text-align: center;
+        margin: 0px;
+    
+    }
+      
+      .certification img {
+        width: 20px; 
+    }
+    
+    .certification img[src="Images/breeam-certification.png"] {
+        width: 32px;
+    }
+    
+    .certification img[src="Images/leed-certification.png"] {
+        width: 60px;
+    }
+    
+      .certification h3 {
+        margin-top: 10px;
+        color: #333333; 
+        font-size: 60%;    
+    }
+    
+    .certification a {
+        text-decoration: none;
+        color: #333333;
+    }
+    
+    .climate-policy-link {
+        background-color: #e8e8e7;
+        text-decoration: none;
+        color: #333333;
+        background-size: cover;
+        text-align: center;
+    }
+    
+    .climate-policy-link img {
+        max-width: 500px;
+        border: 2px solid #333333;
+    }
+    
+    hr {
+        border: 1px solid #333;
+        margin: 20px 0;
+    }
+    
+    body {
+        background-color: #e8e8e7;
+        text-decoration: none;
+        color: #333333;
+        padding: 0;
+        margin: 0;
+        text-align: Left;
+    }
+    
+    .common-language {
+        margin: 20px;
+    }
+    
+    .common-language h2 {
+        color: #333333;
+    }
+    
+    .article {
+        margin: 20px;
+        text-align: left;;
+    }
+    
+    .article a {
+        color: #333333
+    }
+    
+    .article h3 {
+        color: #333333;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    .article h2 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #333333;
+    }
+    
+    .references {
+        list-style-position: outside;
+        padding-left: 10px;
+        text-align: left;
+        margin: 20px;
+    }
+    
+    .references a {
+        color: #333333;
+    }
+    
+    footer {
+        border: 2px solid #222222;
+        background-color: #333333; 
+        color: #ffffff;
+        padding: 20px; 
+        text-align: center;
+    }
+    
+    footer p {
+        margin: 10px 0; 
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+    
+    }
+    

@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1000px) {
 nav {
     display: flex;
     justify-content: space-around;
@@ -106,4 +107,122 @@ footer p {
     font-size: 14px;
 }
 
+}
 
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-around;
+        background-color: #e8e8e8e7;
+        color: #333333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    nav img {
+        width: 70%;
+        height: auto; 
+        margin-left: 14%;
+    }
+
+    nav a {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #43938c;
+        transition: color 0.2s;
+    }
+
+    nav a:hover {
+        color: #9fc2be; 
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 50px;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+        position: relative;
+    }
+
+    nav li:not(:last-child)::after {
+        content: "|";
+        position: absolute;
+        right: -10px; 
+        color: #43938c;
+    }
+
+    .nav-item {
+        display: inline-block;
+    }
+
+    header {
+        font-family: Arial, sans-serif;
+        color: #e8e8e7;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 300%;
+        text-align: center;
+    }
+
+    .header {
+        background-image: url('Images/header-background.png');
+        background-size: auto;
+        padding: 50px;
+    }
+
+    body {
+        background-color: #e8e8e7;
+        color: #43938c;;
+    }
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contact-container {
+        margin: 20px;
+        color: #333333;
+        padding: 20px;
+        margin: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .trees {
+    
+        background-image: url('Images/trees.png');
+        background-repeat: repeat-x;
+        padding: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    footer {
+        border: 2px solid #222222;
+        background-color: #333333; 
+        color: #ffffff;
+        padding: 20px; 
+        text-align: center;
+    }
+    
+    footer p {
+        margin: 10px 0; 
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+    
+    }
