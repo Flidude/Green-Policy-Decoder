@@ -186,6 +186,7 @@ footer p {
         width: 70%;
         height: auto; 
         margin-left: 14%;
+        margin-top: 10px;
     }
 
     nav a {
@@ -202,6 +203,7 @@ footer p {
     }
 
     nav ul {
+        margin-top: 0px;
         list-style-type: none;
         padding: 50px;
         margin: 0;
@@ -248,13 +250,13 @@ footer p {
     }
       
     #search {
-        width: 80%;
+        width: 20%;
         font-size: 16px;
-        padding: 12px 20px 12px 40px;
+        padding: 12px 50px 12px 40px;
         border: 2px solid #333333;
         margin-bottom: 12px;
         border-radius: 8px;
-        margin-left: 20px;
+        margin-left: 18px;
     }
       
     .search-container::before {
@@ -300,7 +302,7 @@ footer p {
     
     
     .article img {
-        max-width: 20%; 
+        max-width: 30%; 
         border-radius: 8px;
         margin-right: 20px;
     }
