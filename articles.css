@@ -190,6 +190,10 @@ footer p {
     font-size: 14px;
 }
 
+footer a {
+    color: #ffffff;
+}
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -391,6 +395,10 @@ footer p {
     
     .copyright {
         font-size: 14px;
+    }
+
+    footer a {
+        color: #ffffff;
     }
     
     }

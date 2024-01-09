@@ -169,6 +169,11 @@ footer p {
     text-decoration: underline; 
 } 
 
+footer a {
+    color: #ffffff;
+
+}
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -350,5 +355,10 @@ footer p {
     .footer-links a:hover{
         text-decoration: underline; 
     } 
+
+    footer a {
+        color: #ffffff;
+    
+    }
     
     }
